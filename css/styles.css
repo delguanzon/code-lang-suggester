@@ -46,3 +46,10 @@ label:hover {
 input:checked ~ .select {
   opacity: 100;
 }
+
+#ansDiv {
+  text-align: center;
+}
+img {
+  width: 200px
+}

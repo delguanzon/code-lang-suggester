@@ -16,6 +16,7 @@ function cCounter(choice1, choice2, choice3) {
 }
 
 //UI logic
+
 function generateAnswer() {
   const snakeChoice = document.querySelector("input[name='snake']:checked").value;
   const appleChoice = document.querySelector("input[name='apple']:checked").value;
@@ -37,17 +38,17 @@ language since it's the default value **/
   }
   else if(cCtr === 3 && leapAns === 366)
   {
-    document.getElementById("ansDiv").innerText = "C++";
+    document.getElementById("ansDiv").innerHTML = "<h1>C++</h1> <img src='/img/cplus.png' />";
   }
   else if(drinkChoice === "a" && appleChoice != "a" && leapAns === 366)
   {
-    document.getElementById("ansDiv").innerText = "Java";
+    document.getElementById("ansDiv").innerHTML = "<h1>Java</h1> <img src='/img/java.png' />";
   }
   else if (snakeChoice === "a" && leapAns === 366) {
-    document.getElementById("ansDiv").innerText = "Python";
+    document.getElementById("ansDiv").innerText = "<h1>Python</h1> <img src='/img/python.png' />";
   }
   else {
-    document.getElementById("ansDiv").innerText = "COBOL";
+    document.getElementById("ansDiv").innerText = "<h1 id='cobol'>COBOL</h1>";
   }
 }
 
