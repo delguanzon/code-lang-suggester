@@ -8,7 +8,7 @@
 <body>
   <div class="form">
     <h1>This web application will determine the coding language that best suits you</h1>
-    <form autocomplete="off">
+    <form autocomplete="off" id="form">
       <fieldset>
         <legend>Which drink do you like most?</legend>
 
@@ -86,10 +86,11 @@
         <legend>How many days are there in a leap year?</legend>
 
         <label for="leap">Answer:</label>
-        <input type="number" id="leap" max="366" class="field" required/> 
+        <input type="number" id="leap" max="366" class="field" required/>
       </fieldset>
+      <button type="submit">Continue</button>
     </form>
-    <a href="#" id="continue">Continue</a>
+    
   </div>
   <div id="ansDiv" class="hidden">
     <!-- <img src=""/>

@@ -6,7 +6,7 @@ body {
   flex-flow: row wrap;
   padding: 50px;
   caret-color: rgb(0, 255, 64);
-  width: 1000px;
+  width: 1100px;
   margin: auto;
   border: solid rgb(0, 255, 64);
 }

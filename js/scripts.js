@@ -17,7 +17,8 @@ function cCounter(choice1, choice2, choice3) {
 
 //UI logic
 
-function generateAnswer() {
+function generateAnswer(event) {
+  event.preventDefault();
   const snakeChoice = document.querySelector("input[name='snake']:checked").value;
   const appleChoice = document.querySelector("input[name='apple']:checked").value;
   const drinkChoice = document.querySelector("input[name='drink']:checked").value;
@@ -31,18 +32,14 @@ correctly for a chance to get the other results or
 else they would always have COBOL as their coding 
 language since it's the default value **/
 
-  if(whatAns.includes("what"))
-  {
-    //alert(document.querySelector("input[name='snake']:checked").value);
-    document.getElementById("ansDiv").innerText = "Rick Roll";
-    document.getElementById("ansDiv").innerHTML = '<iframe width="300" src="https://www.youtube.com/embed/4-UbHw8eDzM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>';
+  if(whatAns.includes("what")) {
+    document.getElementById("ansDiv").innerHTML ='<iframe width="300" src="https://www.youtube.com/embed/4-UbHw8eDzM?controls=0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>';
+    document.getElementById("ansDiv").innerHTML += "<h2>Congrats! You found an easter egg!<h2><h3>Enjoy these happy monkeys!<h3>";
   }
-  else if(cCtr === 3 && leapAns === 366)
-  {
+  else if(cCtr === 3 && leapAns === 366) {
     document.getElementById("ansDiv").innerHTML = "<h1>C++</h1> <img src='/img/cplus.png' />";
   }
-  else if(drinkChoice === "a" && appleChoice != "a" && leapAns === 366)
-  {
+  else if(drinkChoice === "a" && appleChoice != "a" && leapAns === 366) {
     document.getElementById("ansDiv").innerHTML = "<h1>Java</h1> <img src='/img/java.png' />";
   }
   else if (snakeChoice === "a" && leapAns === 366) {
@@ -51,9 +48,11 @@ language since it's the default value **/
   else {
     document.getElementById("ansDiv").innerHTML = "<h1 id='cobol'>COBOL</h1>";
   }
+
+  document.getElementById("ansDiv").innerHTML += '<a href="#" id="clear" onClick="window.location.reload();">Clear form and Try again</a>';
 }
 
 window.addEventListener("load", function() {
-  const cont = document.getElementById("continue");
-  cont.addEventListener("click", generateAnswer);
+  const form = document.getElementById("form");
+  form.addEventListener("submit", generateAnswer);
 });
