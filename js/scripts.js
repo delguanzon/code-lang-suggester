@@ -35,6 +35,7 @@ language since it's the default value **/
   {
     //alert(document.querySelector("input[name='snake']:checked").value);
     document.getElementById("ansDiv").innerText = "Rick Roll";
+    document.getElementById("ansDiv").innerHTML = '<iframe width="300" src="https://www.youtube.com/embed/4-UbHw8eDzM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>';
   }
   else if(cCtr === 3 && leapAns === 366)
   {
@@ -45,10 +46,10 @@ language since it's the default value **/
     document.getElementById("ansDiv").innerHTML = "<h1>Java</h1> <img src='/img/java.png' />";
   }
   else if (snakeChoice === "a" && leapAns === 366) {
-    document.getElementById("ansDiv").innerText = "<h1>Python</h1> <img src='/img/python.png' />";
+    document.getElementById("ansDiv").innerHTML = "<h1>Python</h1> <img src='/img/python.png' />";
   }
   else {
-    document.getElementById("ansDiv").innerText = "<h1 id='cobol'>COBOL</h1>";
+    document.getElementById("ansDiv").innerHTML = "<h1 id='cobol'>COBOL</h1>";
   }
 }
 

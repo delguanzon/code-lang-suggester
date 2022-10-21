@@ -6,6 +6,9 @@ body {
   flex-flow: row wrap;
   padding: 50px;
   caret-color: rgb(0, 255, 64);
+  width: 1000px;
+  margin: auto;
+  border: solid rgb(0, 255, 64);
 }
 
 .form {
@@ -49,6 +52,7 @@ input:checked ~ .select {
 
 #ansDiv {
   text-align: center;
+  margin: auto;
 }
 img {
   width: 200px
