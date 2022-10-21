@@ -11,35 +11,43 @@ function cCounter(choice1, choice2, choice3) {
     x++;
   }
   return x;
+  
+  /*counts how many times the user have c as an answer*/
 }
 
 //UI logic
 function generateAnswer() {
-  const snake = document.querySelector("input[name='snake']:checked").value;
-  const apple = document.querySelector("input[name='apple']:checked").value;
-  const drink = document.querySelector("input[name='drink']:checked").value;
-  const leap = parseInt(document.getElementById("leap").value);
-  const what = document.getElementById("what").value;
-  const cCtr = cCounter(snake, apple, drink); //count how many times user chose c
+  const snakeChoice = document.querySelector("input[name='snake']:checked").value;
+  const appleChoice = document.querySelector("input[name='apple']:checked").value;
+  const drinkChoice = document.querySelector("input[name='drink']:checked").value;
+  const leapAns = parseInt(document.getElementById("leap").value);
+  const whatAns = document.getElementById("what").value;
+  const cCtr = cCounter(snake, apple, drink);
 
-  if(what.includes("what"))
+
+/** User needs to answer the leap year question
+correctly for a chance to get the other results or
+else they would always have COBOL as their coding 
+language since it's the default value **/
+
+  if(whatAns.includes("what"))
   {
     //alert(document.querySelector("input[name='snake']:checked").value);
     document.getElementById("ansDiv").innerText = "Rick Roll";
   }
-  else if(cCtr === 3 && leap === 366)
+  else if(cCtr === 3 && leapAns === 366)
   {
     document.getElementById("ansDiv").innerText = "C++";
   }
-  else if(drink === "a" && apple != "a" && leap === 366)
+  else if(drinkChoice === "a" && appleChoice != "a" && leapAns === 366)
   {
     document.getElementById("ansDiv").innerText = "Java";
   }
-  else if (snake === "a" && leap === 366) {
+  else if (snakeChoice === "a" && leap === 366) {
     document.getElementById("ansDiv").innerText = "Python";
   }
   else {
-    document.getElementById("ansDiv").innerText = "Sorry, we couldn't determine the best language for you.";
+    document.getElementById("ansDiv").innerText = "COBOL";
   }
 }
 
