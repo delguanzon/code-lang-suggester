@@ -22,7 +22,7 @@ function generateAnswer() {
   const drinkChoice = document.querySelector("input[name='drink']:checked").value;
   const leapAns = parseInt(document.getElementById("leap").value);
   const whatAns = document.getElementById("what").value;
-  const cCtr = cCounter(snake, apple, drink);
+  const cCtr = cCounter(snakeChoice, appleChoice, drinkChoice);
 
 
 /** User needs to answer the leap year question
@@ -43,7 +43,7 @@ language since it's the default value **/
   {
     document.getElementById("ansDiv").innerText = "Java";
   }
-  else if (snakeChoice === "a" && leap === 366) {
+  else if (snakeChoice === "a" && leapAns === 366) {
     document.getElementById("ansDiv").innerText = "Python";
   }
   else {

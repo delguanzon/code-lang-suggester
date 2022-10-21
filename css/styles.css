@@ -13,13 +13,36 @@ body {
 }
 
 .field {
-  background: transparent;
-  border: 0;
+  color: rgb(0, 255, 64);
+  background: black;
+  border: 1px solid rgb(0, 255, 64);
 }
 
-/*input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px black inset !important;
-}*/
+input[type="number"].field{
+  width: 40px;
+}
+
+input[type='radio'] {
+    position: absolute;
+    opacity: 100;
+}
+
+.select {
+  display: inline;  
+  padding-right: 5px;
+  float: left;
+  opacity: 0;
+}
+
+label:hover .select{
+  display: inline;
+  opacity: 100;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+input:checked ~ .select {
+  opacity: 100;
+}
