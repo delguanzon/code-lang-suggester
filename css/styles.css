@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 255, 64);
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  caret-color: rgb(0, 255, 64);
+}
+
+.form {
+  width: 500px;
+}
+
+.field {
+  background: transparent;
+  border: 0;
+}
+
+/*input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px black inset !important;
+}*/
