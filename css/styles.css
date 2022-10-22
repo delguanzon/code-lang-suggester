@@ -67,7 +67,9 @@ img {
 }
 
 a {
+  color: rgb(0, 255, 64)
   transition: 0.3s;
+  
 }
 a:visited {
   color: rgb(0, 255, 64);
@@ -76,6 +78,7 @@ a:visited {
 a:hover {
   cursor: pointer;
   font-size:large;
+  color: rgb(255, 255, 255);
 }
 
 button {
