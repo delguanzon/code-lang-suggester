@@ -54,7 +54,7 @@ label:hover {
   cursor: pointer;
 }
 
-input:checked ~ .select {
+input:checked~.select {
   opacity: 100;
 }
 
@@ -89,4 +89,13 @@ button:hover {
   cursor: pointer;
   transition: 0.3s;
   font-size: large;
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  width: 300px;
+  text-align: justify;
 }
