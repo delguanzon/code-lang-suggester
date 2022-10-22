@@ -43,7 +43,7 @@ function generateAnswer(event) {
 //Premade Text
   const javaTxt = firstName + ", you love coffee so much that you don't bleed blood but a thick goo of black liquid gold which is really just coffee. JAVA is the language for people like you who are always on the grind. Make sure to get some sleep every once in a while!";
 
-  const cplusText = "Consistency is key to progress. At least that's what you believe in," + firstName + ". C++ is the coding language for Do-ers like you! There's no need to reinvent the wheel, am I right?"
+  const cplusText = "Consistency is key to progress. At least that's what you believe in, " + firstName + ". C++ is the coding language for Do-ers like you! There's no need to reinvent the wheel, am I right?"
 
   const pythonText = "THERE'S A SNAKE IN MY BOOT! Snakes are the most misunderstood creatures in the world. Snakes can't even compare to humans. If you love snakes " + firstName + " then Python is the language for you. Have you tried Snake sticks?"
 
