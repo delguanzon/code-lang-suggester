@@ -34,8 +34,8 @@ input[type="number"].field{
 }
 
 input[type='radio'] {
-    position: absolute;
-    opacity: 00;
+  position: absolute;
+  opacity: 00;
 }
 
 .select {
