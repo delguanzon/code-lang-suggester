@@ -14,9 +14,6 @@
 ## Description
 
 A web application that would suggest a coding language based on your answers from a series of question.
-
-[Try it on GH Pages](https://delguanzon.github.io/code-lang-suggester/)
-
 ## Setup/Installation Requirements
 
 * Clone this repository on your desktop
