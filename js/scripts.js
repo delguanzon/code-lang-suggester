@@ -43,7 +43,7 @@ function generateAnswer(event) {
 //Premade Text
   const javaTxt = firstName + ", you love coffee so much that you don't bleed blood but a thick goo of black liquid gold which is really just coffee. JAVA is the language for people like you who are always on the grind. Make sure to get some sleep every once in a while!";
 
-  const cplusText = "Consistency is a key to progress. At least that's what you believe in," + firstName + ". C++ is the coding language for Do-ers like you! There's no need to reinvent the wheel, am I right?"
+  const cplusText = "Consistency is key to progress. At least that's what you believe in," + firstName + ". C++ is the coding language for Do-ers like you! There's no need to reinvent the wheel, am I right?"
 
   const pythonText = "THERE'S A SNAKE IN MY BOOT! Snakes are the most misunderstood creatures in the world. Snakes can't even compare to humans. If you love snakes " + firstName + " then Python is the language for you. Have you tried Snake sticks?"
 
@@ -60,15 +60,15 @@ language since it's the default value **/
     document.getElementById("ansDiv").innerHTML += "<h2>Congrats! "+firstName+" You found an easter egg!<h2><h3>Enjoy these happy monkeys!<h3>";
   }
   else if(cCtr === 3 && leapAns === 366) {
-    document.getElementById("ansDiv").innerHTML = "<h1>C++</h1> <img src='/img/cplus.png' />";
+    document.getElementById("ansDiv").innerHTML = "<h1>C++</h1> <img src='./img/cplus.png' />";
     document.getElementById("ansDiv").innerHTML += "<p>" + cplusText + "<p>"
   }
   else if(drinkChoice === "a" && appleChoice != "a" && leapAns === 366) {
-    document.getElementById("ansDiv").innerHTML = "<h1>Java</h1> <img src='/img/java.png' />";
+    document.getElementById("ansDiv").innerHTML = "<h1>Java</h1> <img src='./img/java.png' />";
     document.getElementById("ansDiv").innerHTML += "<p>" + javaTxt + "<p>"
   }
   else if (snakeChoice === "a" && leapAns === 366) {
-    document.getElementById("ansDiv").innerHTML = "<h1>Python</h1> <img src='/img/python.png' />";
+    document.getElementById("ansDiv").innerHTML = "<h1>Python</h1> <img src='./img/python.png' />";
     document.getElementById("ansDiv").innerHTML += "<p>" + pythonText + "<p>"
   }
   else {
