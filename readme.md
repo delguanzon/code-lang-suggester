@@ -9,11 +9,12 @@
 * Git
 * HTML
 * CSS
-* Bootstrap
+* Javascript
 
 ## Description
 
 A web application that would suggest a coding language based on your answers from a series of question.
+[View on Github Pages](https://delguanzon.github.io/code-lang-suggester/)
 ## Setup/Installation Requirements
 
 * Clone this repository on your desktop
@@ -22,7 +23,7 @@ A web application that would suggest a coding language based on your answers fro
 
 ## Known Bugs
 
-* GitHub Pages will sometimes not display background image and FontFace from CSS file, if this happens clear your cache or open in a new private window
+* No known bugs. Feel free to contact me if you encounter any bug.
 
 ## License
 
